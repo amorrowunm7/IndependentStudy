@@ -48,7 +48,7 @@ print("The edge between %s and %s is the most central edge" %
     (igraph_kite.vs[central_edges[0][0]]["name"],
     igraph_kite.vs[central_edges[0][1]]["name"]))
 
-print("Print out the PrageRanks for verticies")
+print("Print out the PageRanks for vertices")
 igraph_kite.pagerank()
 
 layout = igraph_kite.layout("kamada_kawai")
