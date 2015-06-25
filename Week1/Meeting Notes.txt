@@ -1,0 +1,17 @@
+For Bridge Content:
+  - basic excel stuff to get the working / thinking with data
+    - abs versus relative, mean std of data, rows versus column, structure versus content
+  - truth tables, boolean logic and operators
+  - for people who struggle with IS210
+
+end of next week make decision on 7.5 weeks versus full semester (taking incomplete)
+
+week1:
+    task: dl and install graphlab create (DONE)
+    task: sign up for month of safari, for training materials (DONE)
+    task: install and learn gephi 
+    task: install igraph (DONE)
+    task: pull two data sets:
+        load data set
+        play with it
+    deliverable: present thru ipython notebook (5-10m)
