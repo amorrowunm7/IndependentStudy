@@ -6,7 +6,7 @@ igraph_cite = Graph()
 print("Importing citation network graph ...")
 
 # Set of vertex names
-vertices = set()
+vertices = { }
 
 # Open file to citation network
 f = open('Week1/cit-HepPh.txt', 'rt')
@@ -18,21 +18,31 @@ f.readline()
 f.readline()
 
 # Loop thru file of edges
+counter = 0
+edges = []
 try:
-    for row in f.readlines():
+    for line in f.readlines():
+        row = [int(x) for x in line.strip().split('\t')]
+        print "bp %d" % counter
         # Keep running track of all nodes and add one by one
         if row[0] not in vertices:
-            vertices.add(row[0])
+            vertices[row[0]] = 1
             igraph_cite.add_vertices(row[0])
         if row[1] not in vertices:
-            vertices.add(row[1])
+            vertices[row[1]] = 1
             igraph_cite.add_vertices(row[1])
 
         # Attempt to add edge to graph
-        try:
-            igraph_cite.add_edges( (row[0], row[1]) )
-        except Exception as e:
-            print e
+        edges.append((row[0], row[1]))
+        counter = counter + 1
+
+        if counter % 100 == 0:
+            print "Adding another 100 edges (%d total)" % (counter * 100)
+            try:
+                igraph_cite.add_edges( edges )
+                edges = []
+            except Exception as e:
+                print e
 finally:
     f.close()
 
