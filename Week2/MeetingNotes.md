@@ -1,9 +1,10 @@
 # Week 2
 
 ## Readings:
-- Read Mining the Social Web, chapters 1-3
-- Read Social Network Analysis for Startups, chapters 1-3
-- Read Natural Language Processing with Python, chapter 1-2
+
+- Read Mining the Social Web, chapters 1-3 **(DONE)**
+- Read Social Network Analysis for Startups, chapters 1-3 **(DONE)**
+- Read Natural Language Processing with Python, chapter 1-2 **(DONE)**
 
 ## Exercises:
 
