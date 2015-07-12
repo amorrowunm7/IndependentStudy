@@ -4,6 +4,8 @@
 
 Things missed from last week:
 
-- What are next steps for bridge content?
-- Who to speak about regarding capstone now?
-- Go over week 2
+- Bridge content / captone update
+- Go over week 4's
+- sentiment analysis of the tweets crawled
+  - by hand
+  - using alchemyapi
